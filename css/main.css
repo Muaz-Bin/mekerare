@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #000;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-border {
+  border-color: #d9d9d9 !important;
+}
+
+.section-title h1 {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 85px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+.section-title h1::after {
+  content: "";
+  position: absolute;
+  left: -15%;
+  top: -5%;
+  width: 130%;
+  height: 110%;
+  border-radius: 50%;
+  background-color: rgba(78, 33, 213, 0.7);
+  z-index: -1;
+  filter: blur(100px);
+}
+
+.theme-btn {
+  padding: 15px 35px;
+  display: inline-block;
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+}
+.theme-btn:hover {
+  background-color: #fff;
+  color: #060001;
+}
+.theme-btn i {
+  margin-right: 5px;
+}
+.theme-btn.theme-btn-outline {
+  background: #fff;
+  color: #222a35;
+  border: 1px solid #222a35;
+}
+.theme-btn.theme-btn-outline:hover {
+  background-color: #222a35;
+  color: #fff;
+  border: 1px solid #222a35;
+}
+
+header {
+  position: relative;
+  z-index: 20;
+}
+header.sticky {
+  backdrop-filter: blur(40px) brightness();
+  background-color: #00000080;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  animation: sticky 0.6s;
+}
+header .navbar-brand {
+  max-width: 100px;
+}
+
+@keyframes sticky {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0;
+  }
+}
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.navigation-bar::after {
+  content: "";
+  position: absolute;
+  right: -55px;
+  top: 0;
+  background-color: #4d1cd4;
+  width: 300px;
+  height: 133px;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(150px);
+  z-index: -1;
+}
+.navigation-bar .navbar-nav {
+  display: flex;
+  gap: 42px;
+  flex-direction: row;
+  align-items: center;
+  padding: 37px 0;
+}
+.navigation-bar .navbar-nav .nav-link {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #fff;
+  min-width: 90px;
+  text-align: center;
+}
+.navigation-bar .navbar-nav .nav-link:hover {
+  font-family: "Rubik Glitch";
+}
+
+.hero-area {
+  padding-top: 420px;
+  padding-bottom: 70px;
+  position: relative;
+  z-index: 2;
+  background: #000;
+}
+.hero-area .hero-vid {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  transform: translateY(-15%);
+  z-index: -1;
+}
+.hero-area h1 {
+  font-size: 110px;
+  font-weight: 800;
+  line-height: 105px;
+  color: #fff;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.hero-area h1:hover {
+  cursor: url(../img/cursor.png), pointer;
+}
+.hero-area p {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #fff;
+  text-align: center;
+}
+
+.tag-area {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding-top: 200px;
+}
+.tag-area a {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 45px;
+  color: #fff;
+  margin: 0 24px;
+}
+.tag-area a:hover {
+  background: linear-gradient(270deg, #4c0ed1 10.81%, #502cd7 22.8%, #554bdc 41.2%, #5967e1 55.98%, #63aced 68.25%, #68d2f3 81.35%, #ff0082 90%, #6adff6 96.13%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tag-video {
+  height: 30px;
+  padding-bottom: 550px;
+  position: relative;
+  z-index: 1;
+}
+.tag-video .tag-vid {
+  position: absolute;
+  left: 0;
+  top: -110px;
+  width: 100%;
+  z-index: -1;
+}
+
+.feature-area {
+  position: relative;
+  z-index: 2;
+  padding-top: 100px;
+  background: #000;
+}
+.feature-area h1 {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 55px;
+  color: #fff;
+  position: relative;
+  z-index: 3;
+}
+
+.feature-area h1 span:hover {
+  font-family: "Rubik Glitch";
+  font-weight: 400 !important;
+}
+.feature-area .glow-shape {
+  background-color: #4d1cd4;
+  width: 80%;
+  height: 200px;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(150px);
+  position: relative;
+  z-index: 2;
+}
+.feature-area .feature-gap {
+  margin-bottom: 220px;
+  align-items: center;
+}
+
+.feature-video {
+  position: relative;
+  z-index: 1;
+  padding-top: 300px;
+  padding-bottom: 170px;
+}
+.feature-video .section-title h1 {
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 85px;
+}
+.feature-video .feature-vid {
+  position: absolute;
+  left: 0;
+  top: -320px;
+  width: 100%;
+  z-index: -1;
+}
+.feature-video h1 {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #fff;
+}
+
+.feature-video .magnet_cursor {
+  transition: transform 300ms cubic-bezier(0.3, 1, 0.7, 1);
+}
+
+.project-area {
+  position: relative;
+  z-index: 2;
+  padding-top: 150px;
+}
+.project-area .section-title {
+  margin-bottom: 180px;
+}
+.project-area .single-project {
+  text-align: center;
+}
+.project-area .single-project p {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+  margin-top: 34px;
+  margin-bottom: 0;
+  max-width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-area img {
+  margin: 0 15px;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(302deg) brightness(500%) contrast(501%);
+}
+.slider-area img:hover {
+  cursor: pointer;
+  filter: none;
+}
+
+footer {
+  padding-top: 390px;
+  padding-bottom: 150px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+  z-index: 1;
+}
+footer .footer-vid {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  z-index: -1;
+}
+footer a {
+  font-size: 40px;
+  color: #fff;
+}
+footer a:hover {
+  color: #fff;
+}
+
+
+/*# sourceMappingURL=main.css.map */
+
+.text-hover-animation{
+  color: #fff;
+  font-weight: bold;
+}
+.text-hover-animation:hover {
+    font-family: "Rubik Glitch";
+    font-weight: 600 !important;
+    color: #fff;
+}
+a.single-project > div {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-main {
+    width: 155px;
+}
+.feature-area h1 span{
+    font-weight: bold;
+}
